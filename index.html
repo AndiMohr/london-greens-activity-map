@@ -28,6 +28,10 @@
       top: 0;
       bottom: 0;
     }
+    
+    .marker {
+      border:solid 2px #fff;
+    }
 
 
     .mapboxgl-popup {
@@ -49,7 +53,7 @@
     }
 
     .mapboxgl-popup-content h3 {
-      background: #000;
+      background: #6ab023;
       text-align: center;
       color: #fff;
       margin: 0;
@@ -142,7 +146,7 @@
 
           // create a variable for your markup and add it to the map 
           var marker = new mapboxgl.Marker({
-              color: '#000000' // '#6ab023'
+              color: '#333333' // '#6ab023'
             })
             .setLngLat([row.Longitude, row.Latitude])
             .setPopup(popup)
